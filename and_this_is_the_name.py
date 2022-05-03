@@ -1,4 +1,4 @@
-def full_names(first_names, last_names, min_length=-1):
+def full_names(first_names: list, last_names: list, min_length=-1) -> list:
     """
     :param first_names: A list of first names.
     :param last_names: A list of last names.
@@ -12,7 +12,7 @@ def full_names(first_names, last_names, min_length=-1):
 
 
 if __name__ == '__main__':
-    first_names = ['avi', 'moshe', 'yaakov']
-    last_names = ['cohen', 'levi', 'mizrahi']
-    print(full_names(first_names, last_names))
-    print(full_names(first_names, last_names, 10))
+    arg_first_names = ['avi', 'moshe', 'yaakov']
+    arg_last_names = ['cohen', 'levi', 'mizrahi']
+    print(full_names(arg_first_names, arg_last_names))
+    print(full_names(arg_first_names, arg_last_names, 10))

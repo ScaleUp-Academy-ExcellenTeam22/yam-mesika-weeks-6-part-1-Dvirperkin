@@ -1,4 +1,7 @@
-def count_words(text):
+from typing import Generator, Any
+
+
+def count_words(text: Generator[str, Any, None]) -> dict:
     """
     :param text: An iterable text.
     :return: A dictionary of the length of each word in the given text - Example: "You: 3".
