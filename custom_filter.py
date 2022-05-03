@@ -1,4 +1,7 @@
-def custom_filter(function: callable, iterable: iter) -> list:
+from typing import Callable, Iterable
+
+
+def custom_filter(function: Callable, iterable: Iterable) -> list:
     """
     :param function: A boolean function.
     :param iterable: An iterable to run on it the given function.
