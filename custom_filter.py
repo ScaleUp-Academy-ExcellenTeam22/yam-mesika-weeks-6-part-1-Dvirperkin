@@ -1,4 +1,4 @@
-def custom_filter(function, iterable):
+def custom_filter(function: callable, iterable: iter) -> list:
     """
     :param function: A boolean function.
     :param iterable: An iterable to run on it the given function.

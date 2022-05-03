@@ -1,7 +1,7 @@
 import time
 
 
-def timer(function, *args):
+def timer(function: callable, *args) -> float:
     """
     :param function: A function to measure it run time on the given arguments.
     :param args: An arguments for the given function.
